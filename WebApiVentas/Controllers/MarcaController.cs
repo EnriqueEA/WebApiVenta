@@ -87,8 +87,14 @@ namespace WebApiVentas.Controllers
 
         // DELETE api/<MarcaController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
+            var marca = await _context.Marcas.FindAsync(id);
+
+            _context.Marcas.Remove(marca);
+            await _context.SaveChangesAsync();
+
+            return Ok();
         }
     }
 }

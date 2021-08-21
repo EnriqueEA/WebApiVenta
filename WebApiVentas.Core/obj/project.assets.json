@@ -8,19 +8,26 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\gabyg\\.nuget\\packages\\": {}
+    "C:\\Users\\Juber\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabyg\\source\\repos\\ProyectoWebApiventas\\WebApiVentas.Core\\WebApiVentas.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Juber\\Documents\\Proyecto-Enrique\\WebApiVentas.Core\\WebApiVentas.Core.csproj",
       "projectName": "WebApiVentas.Core",
-      "projectPath": "C:\\Users\\gabyg\\source\\repos\\ProyectoWebApiventas\\WebApiVentas.Core\\WebApiVentas.Core.csproj",
-      "packagesPath": "C:\\Users\\gabyg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabyg\\source\\repos\\ProyectoWebApiventas\\WebApiVentas.Core\\obj\\",
+      "projectPath": "C:\\Users\\Juber\\Documents\\Proyecto-Enrique\\WebApiVentas.Core\\WebApiVentas.Core.csproj",
+      "packagesPath": "C:\\Users\\Juber\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Juber\\Documents\\Proyecto-Enrique\\WebApiVentas.Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\gabyg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Juber\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
