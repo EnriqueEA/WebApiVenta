@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\gabyg\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\gabyg\\.nuget\\packages"
+    ]
+  }
+}
