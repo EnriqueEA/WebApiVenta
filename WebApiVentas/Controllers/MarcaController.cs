@@ -80,9 +80,24 @@ namespace WebApiVentas.Controllers
         }
 
         // PUT api/<MarcaController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult> Put(int id , [FromBody] MarcaDto marcaDto)
         {
+            if (marcaDto.marcaId != id)
+            {
+                return BadRequest("Los IDs no coinciden.");
+            }
+
+            var marca = new Marca
+            {
+                MarcaId = marcaDto.marcaId,
+                Descripcion = marcaDto.Descripcion,
+                PaisId = marcaDto.PaisId
+            };
+            _context.Update(marca);
+            await _context.SaveChangesAsync();
+
+            return Ok();
         }
 
         // DELETE api/<MarcaController>/5
