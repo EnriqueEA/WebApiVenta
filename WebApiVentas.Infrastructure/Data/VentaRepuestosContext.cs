@@ -30,7 +30,7 @@ namespace WebApiVentas.Infrastructure.Data
         public virtual DbSet<Pais> Pais { get; set; }
         public virtual DbSet<Pedido> Pedidos { get; set; }
         public virtual DbSet<Producto> Productos { get; set; }
-        public virtual DbSet<Provincia> Provincia { get; set; }
+        public virtual DbSet<Provincia> Provincias { get; set; }
         public virtual DbSet<Rol> Rols { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }
         public virtual DbSet<UsuarioRol> UsuarioRols { get; set; }
