@@ -18,13 +18,13 @@ namespace WebApiVentas.Infrastructure.Data
         {
         }
 
-        public virtual DbSet<Categoria> Categoria { get; set; }
+        public virtual DbSet<Categoria> Categorias { get; set; }
         public virtual DbSet<Cliente> Clientes { get; set; }
         public virtual DbSet<Departamento> Departamentos { get; set; }
         public virtual DbSet<DetallePedido> DetallePedidos { get; set; }
         public virtual DbSet<Distrito> Distritos { get; set; }
         public virtual DbSet<HistorialPedido> HistorialPedidos { get; set; }
-        public virtual DbSet<Imagen> Imagens { get; set; }
+        public virtual DbSet<Imagen> Imagenes { get; set; }
         public virtual DbSet<LugarEntrega> LugarEntregas { get; set; }
         public virtual DbSet<Marca> Marcas { get; set; }
         public virtual DbSet<Pais> Pais { get; set; }
