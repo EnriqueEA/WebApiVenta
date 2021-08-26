@@ -20,7 +20,7 @@ namespace WebApiVentas.Core.Models
         public string Descripcion { get; set; }
         public string Modelo { get; set; }
         public int Stock { get; set; }
-        public decimal Precio { get; set; }
+        public double Precio { get; set; }
 
         public virtual Categoria Categoria { get; set; }
         public virtual Marca Marca { get; set; }

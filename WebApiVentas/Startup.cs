@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApiVentas.Infrastructure.Data;
+using WebApiVentas.Servicios;
 
 namespace WebApiVentas
 {
@@ -36,10 +37,17 @@ namespace WebApiVentas
                 options.UseSqlServer(Configuration.GetConnectionString("WebApiVentas"));
             });
 
+
+            services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosLocal>();
+
+            services.AddHttpContextAccessor();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApiVentas", Version = "v1" });
             });
+
+
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +61,8 @@ namespace WebApiVentas
             }
 
             app.UseHttpsRedirection();
+
+            app.UseStaticFiles();
 
             app.UseRouting();
 

@@ -10,9 +10,9 @@ namespace WebApiVentas.Core.Models
         public int DetallePedidoId { get; set; }
         public int PedidoId { get; set; }
         public int ProductoId { get; set; }
-        public decimal Descuento { get; set; }
+        public double Descuento { get; set; }
         public int Cantidad { get; set; }
-        public decimal Subtotal { get; set; }
+        public double Subtotal { get; set; }
 
         public virtual Pedido Pedido { get; set; }
         public virtual Producto Producto { get; set; }
